@@ -1,0 +1,21 @@
+{
+    //"python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python",  // Adjust for Windows if needed
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}",
+        "${workspaceFolder}/src",
+        "${workspaceFolder}/lib"
+        //"${workspaceFolder}/venv/lib/python3.x/site-packages"  // Adjust for your Python version
+    ],
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "debugpy.adapterType": "legacy",  // Allows breakpoints in library code
+    "terminal.integrated.cwd": "${workspaceFolder}",
+    "python.analysis.autoImportCompletions": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.terminal.activateEnvironment": true
+
+}
