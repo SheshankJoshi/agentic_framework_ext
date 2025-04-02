@@ -25,6 +25,18 @@
             "env": {
                 "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/lib"
             }
+        },
+        {
+          "name": "Python: Debug Project",
+          "type": "python",
+          "request": "launch",
+          "program": "${file}",
+          "console": "integratedTerminal",
+          "justMyCode": false, // Allows debugging of external library code
+          "cwd": "${workspaceFolder}",
+          "env": {
+            "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/lib"
+          }
         }
     ]
 }
