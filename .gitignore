@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+logs/
 env/
 build/
 develop-eggs/
@@ -108,3 +109,5 @@ ENV/
 .vscode/
 .idea/
 
+# Env files
+.env

@@ -1,5 +1,5 @@
 """Console script for agentic_framework."""
-import agentic_framework
+import main
 
 import typer
 from rich.console import Console
