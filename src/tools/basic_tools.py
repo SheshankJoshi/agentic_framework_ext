@@ -14,7 +14,7 @@ from tools.implementation import *
 # Set up environment variables with necessary credentials and keys.
 # os.environ["GOOGLE_API_KEY"] = "YOUR_GOOGLE_API_KEY"
 # os.environ["CUSTOM_SEARCH_ENGINE_ID"] = "YOUR_CSE_ID"
-# print("Google Search ID", os.getenv("GOOGLE_API_KEY"))
+print("Google Search ID : ", os.getenv("GOOGLE_API_KEY"))
 
 
 web_search_google = Tool(
@@ -65,3 +65,5 @@ def summarize_text(text: str) -> dict:
 #     # This function is a placeholder. In practice, you would have a database or API for recommendations.
 #     recommendations = ["Tool A", "Tool B", "Tool C"]
 #     return recommendations
+if __name__ == "__main__":
+    print(web_search_google.func("best places to visit in UAE"))

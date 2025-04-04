@@ -132,6 +132,7 @@ class AdvancedAgent(Agent):
 
 if __name__ == "__main__":
     model = get_llm()
+    from pprint import pprint
     if not model:
         raise ValueError("No LLM provided. Please check your model initialization.")
 
@@ -161,4 +162,4 @@ if __name__ == "__main__":
     # Use invoke() to support multiple outputs (i.e. including intermediate_steps)
     response = executor.invoke({"input": query})
     print("Agent Response:")
-    print(response)
+    pprint(response)
