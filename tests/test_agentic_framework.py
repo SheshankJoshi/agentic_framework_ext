@@ -1,6 +1,6 @@
 import pytest
 from fastapi.testclient import TestClient
-from main import app
+from agentic_framework.src.main import app
 
 client = TestClient(app)
 
