@@ -1,0 +1,25 @@
+{
+  "dynamic_example_tool": {
+    "func_name": "dynamic_example_tool",
+    "description": "A dummy search tool for testing.",
+    "config": {
+      "EXAMPLE_CONFIG": "value123"
+    },
+    "code": "def dynamic_example_tool(arg1: str) -> str:\n    \"\"\"\n    Example dynamically injected tool.\n    It returns a message with the provided argument and checks for an environment key.\n    Also demonstrates usage of a bound variable.\n    \"\"\"\n    import os\n    def helper():\n        return \"helper value\"\n    bound_value = helper()\n    required_key = os.environ.get(\"EXAMPLE_CONFIG\", \"default\")\n    return f\"Dynamic tool received: {arg1} with config {required_key} and bound value {bound_value}\"\n",
+    "metadata": {
+      "imports": [
+        {
+          "module": "os",
+          "as": null
+        }
+      ],
+      "env_vars": [],
+      "bound_variables": {
+        "nonlocals": {},
+        "globals": {},
+        "builtins": {}
+      },
+      "source_length": 488
+    }
+  }
+}
